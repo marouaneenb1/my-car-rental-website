@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="موقع تأجير السيارات يوفر لك خدمة استئجار سيارات مريحة وآمنة بأسعار تنافسية.">
+    <title>موقع تأجير السيارات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>موقع تأجير السيارات</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#services">خدماتنا</a></li>
+                <li><a href="#booking">احجز الآن</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services">
+        <div class="container">
+            <h2>خدماتنا</h2>
+            <p>نقدم مجموعة واسعة من السيارات لتلبية احتياجاتك:</p>
+            <ul>
+                <li>
+                    <img src="images/economy-car.jpg" alt="سيارة اقتصادية" width="250">
+                    <p>سيارة اقتصادية</p>
+                </li>
+                <li>
+                    <img src="images/luxury-car.jpg" alt="سيارة فاخرة" width="250">
+                    <p>سيارة فاخرة</p>
+                </li>
+                <li>
+                    <img src="images/suv-car.jpg" alt="سيارة دفع رباعي" width="250">
+                    <p>سيارة دفع رباعي</p>
+                </li>
+                <li>
+                    <img src="images/family-car.jpg" alt="سيارة عائلية" width="250">
+                    <p>سيارة عائلية</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="booking">
+        <div class="container">
+            <h2>احجز سيارتك الآن!</h2>
+            <form action="#" method="POST">
+                <label for="name">اسمك:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="car_type">نوع السيارة:</label>
+                <select id="car_type" name="car_type">
+                    <option value="economy">سيارة اقتصادية</option>
+                    <option value="luxury">سيارة فاخرة</option>
+                    <option value="suv">سيارة دفع رباعي</option>
+                    <option value="family">سيارة عائلية</option>
+                </select>
+
+                <label for="pickup_date">تاريخ الاستلام:</label>
+                <input type="date" id="pickup_date" name="pickup_date" required>
+
+                <label for="dropoff_date">تاريخ التسليم:</label>
+                <input type="date" id="dropoff_date" name="dropoff_date" required>
+
+                <button type="submit">احجز الآن</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 جميع الحقوق محفوظة</p>
+    </footer>
+
+</body>
+</html>
